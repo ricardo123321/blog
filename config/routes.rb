@@ -5,3 +5,9 @@ Rails.application.routes.draw do
   end
   resources :tags
 end
+
+
+Logger::Application.routes.draw do
+  # ... other resources we have defined ...
+  resources :authors
+end
